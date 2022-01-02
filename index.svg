@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="300">
+    <foreignObject width="1024" height="300">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                body {
+                    background: white;
+                    margin: 0;
+                }
+                .header {
+                    height: 300px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #E91E63;
+                    color: white;
+                    flex-direction: column;
+                    position: relative;
+                }
+                .header-background {
+                    height: 300px;
+                    width: 1024px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                }
+                .header-overlay {
+                    text-align: center;
+                }
+                .header-title {
+                    font-size: 2.5em;
+                    letter-spacing: 0.05em;
+                }
+                .header-subheading {
+                    font-size: 1.3em;
+                    opacity: 0.8;
+                    margin-top: 8px;
+                    letter-spacing: 0.08em;
+                }
+                .header-animation-wrapper {
+                    list-style: none;
+                }
+                .header-animation-wrapper li{
+                    --i: 0;
+                    display: block;
+                    width: 72px;
+                    height: 72px;
+                    background: #ffffff50;
+                    backdrop-filter: blur(4px);
+                    position: absolute;
+                    bottom: -100px;
+                    left: calc(var(--i) * 90px - 20px);
+                    animation: rolling-up 12s linear infinite;
+                }
+                @keyframes rolling-up {
+                    from {
+                        transform: translateY(0) rotate(0);
+                    }
+                    to {
+                        transform: translateY(-400px) rotate(720deg);
+                    }
+                }
+            </style>
+            <body>
+                <div class="header">
+                    <div class="header-overlay">
+                        <div class="header-title">MCBBS Extender</div>
+                        <div class="header-subheading">Make nothing to anything</div>
+                    </div>
+                    <div class="header-background">
+                        <ul class="header-animation-wrapper">
+                            <li style="animation-delay: 1.5s;--i: 0"></li>
+                            <li style="animation-delay: 6.2s;--i: 1"></li>
+                            <li style="animation-delay: 2.1s;--i: 2"></li>
+                            <li style="animation-delay: 8.6s;--i: 3"></li>
+                            <li style="animation-delay: 0;--i: 4"></li>
+                            <li style="animation-delay: 9.5s;--i: 5"></li>
+                            <li style="animation-delay: 7.3s;--i: 6"></li>
+                            <li style="animation-delay: 5.1s;--i: 7"></li>
+                            <li style="animation-delay: 2.4s;--i: 8"></li>
+                            <li style="animation-delay: 11.3s;--i: 9"></li>
+                            <li style="animation-delay: 4.5s;--i: 10"></li>
+                            <li style="animation-delay: 8.6s;--i: 11"></li>
+                            <li style="animation-delay: 9.8s;--i: 12"></li>
+                            <li style="animation-delay: 0.8s;--i: 13"></li>
+                        </ul>
+                    </div>
+                </div>
+            </body>
+        </html>
+    </foreignObject>
+</svg>
